@@ -1,0 +1,220 @@
+/*resetando o documento*/
+* {
+    display: inline,block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo padrão para texto e parágrafos */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: whitesmoke;
+    color: #333;
+}
+  
+p {
+    margin-bottom: 1.5em;
+    text-align: justify;
+    max-width: 500px;
+}
+  
+  /* Estilo padrão para cabeçalhos */
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+  
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+  
+h3 {
+    font-size: 1.17em;
+    margin-bottom: 0.5em;
+}
+  
+h4 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+  
+h5 {
+    font-size: 0.83em;
+    margin-bottom: 0.5em;
+}
+  
+h6 {
+    font-size: 0.67em;
+    margin-bottom: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    
+}
+a:hover {
+    background-color: #3a3a3a0f;
+}
+
+/* menu */
+a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/*definir border bottom quando estiver na pagina*/
+a.linkAtivo{
+    border-bottom: 1px solid;
+}
+
+/*links services in home pages*/
+.link-services-home {
+    display: block;
+    color: black;
+    width: 100%;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2424da;
+    margin-bottom: 5px;
+    
+}
+
+#menu {
+    display: flex;
+    gap: 10px;
+    text-transform: capitalize;
+    list-style: none;
+}
+#menu a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+#menu a:hover {
+    background-color: blue;
+}
+#btn-mobile {
+    display: none;
+}
+.main-section{
+    margin-top: 65px;
+    background-color: inherit;
+    min-height: 15vh;
+}
+
+.grid-container {
+    max-width: 1200px;
+    margin: 0px auto;
+
+    display: grid;
+    grid-template-areas:
+        "main-section main-section main-section"
+        "help-section help-section help-section"
+        "section-web-development section-web-development section-web-development"
+        "section-online-presence section-online-presence section-online-presence"
+        "our-results-section our-results-section our-results-section"
+        "portfolio portfolio portfolio"
+        "last-section last-section last-section"
+    ;
+}
+
+/*esconder comentarios clientes temporariamente*/
+
+.help-section {
+    grid-area: help-section;
+    margin-top: 30px;
+}
+.section-web-development {
+    grid-area: section-web-development;
+    margin-top: 70px;
+}
+.section-online-presence {
+    grid-area: section-online-presence;
+    margin-top: 70px;
+}
+.our-results-section {
+    grid-area: our-results-section;
+    margin-top: 70px;
+}
+.portfolio {
+    grid-area: portfolio;
+    margin-top: 70px;
+    min-height: max-content;
+}
+.last-section {
+    grid-area: last-section;
+    margin-top: 70px;
+}
+
+
+@media (max-width: 600px){
+    #header{
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        left: 0;
+    }
+    #btn-mobile{
+        display: block;
+        background: transparent;
+        border: none;
+    }
+    #btn-mobile:hover {
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background: #f2f1f1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #e7e7e7;
+        transition: .6s;
+        height: 0px;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-Y: hidden;
+    }
+    
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow: auto;
+    }
+
+    #menu a {
+        color: black;
+        padding: 1rem 0;
+        margin: 0px 1rem;
+        border-bottom: 2px solid rgb(0, 0, 0, 0.05);
+    }
+
+    #menu a:hover {
+        background-color: rgba(25, 25, 25, 0.034);
+    }
+}

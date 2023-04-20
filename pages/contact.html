@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--cria uma descriçao para a pagina-->
+    <meta name="description" content="Get in touch with WebInnovate. Fill out the form or contact us by phone or email.">
+    
+    <!-- Adiciona palavras-chave relevantes para a página -->
+    <meta name="keywords" content="WebInnovate, contact, get in touch, phone, email">
+    
+    <!-- Indica o autor da página -->
+    <meta name="author" content="WebInnovate">
+
+    <!-- Define o idioma da página -->
+    <meta http-equiv="Content-Language" content="en-us">
+
+    <!---->
+    <meta property="og:title" content="We - Contact Us">
+    <meta property="og:description" content="Get in touch with WebInnovate. Fill out the form or contact us by phone or email.">
+    <meta property="og:image" content="/assets/imgs/social-media/facebook.png">
+    <meta property="og:url" content="https://www.webinnovate.com/pages/contact.html">
+    
+    <meta name="twitter:title" content="We - Contact Us">
+    <meta name="twitter:description" content="Get in touch with WebInnovate. Fill out the form or contact us by phone or email.">
+    <meta name="twitter:image" content="/assets/imgs/social-media/facebook.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Adiciona um favicon -->
+    <link rel="shortcut icon" href="/assets/imgs/logo.png" type="image/x-icon">
+
+    <!-- Folha de estilos da página -->
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
+
+    <!-- Adiciona o FontAwesome -->
+    <script src="https://kit.fontawesome.com/beb7de184b.js" crossorigin="anonymous"></script>
+
+    <!-- Adiciona o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    
+    <title>Contact Us - WebInnovate</title>
+    
+</head>
+<body>
+    <header id="header">
+        <a href="/index.html" id="logo">WebInnovate</a><!--logo-->
+        <nav id="nav">
+            <ul id="menu"> <!--menu-->
+                <li><a href="/index.html" title="Go to the home page">Home</a></li>
+                <li><a href="/pages/services.html" title="Learn more about our services">services</a></li>
+                <li><a href="/pages/portfolio.html" title="See our previous works">portfolio</a></li>
+                <li><a href="/pages/about.html" title="Learn more about us">about us</a></li>
+                <li><a href="/pages/contact.html" title="Contact us" class="linkAtivo">contact</a></li>
+            </ul>
+        </nav>
+
+        <button id="btn-mobile"> <!--menu mobile -hamburguer-->
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <!--btn whatsapp-->
+    <a href="https://wa.me/5521980364070?text=Olá%20WebInnovate,%20gostaria%20de%20mais%20informações." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <main class="main">
+        <section class="main-section">
+            <section class="main-content">
+                <h1 class="titles">Contact Us</h1>
+            </section>
+        </section>
+        
+        <div class="grid-container">
+            <div class="contact-us">
+                <div class="left-address box-address">
+                    <h4>Let's Get in touch</h4>
+                    <p>We're open for any questions or just to have a chat.</p>
+                    <div class="content">
+                        <div class="place">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span class="text">Service throughout Brazil</span>
+                        </div>
+    
+                        <div class="phone">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            
+                            <span class="text"> (21) 98036<span style="display:inline; margin-left: 4px; margin-right: 4px;">-</span>4070</span>
+                        </div>
+    
+                        <div class="email">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span class="text">contato@webinnovate.com.br</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form method="post" action="/assets/php/form.php">
+                    <h4>Get in Touch</h4>
+                    <div class="box-name-email">
+                        <div class="box-name box-content">
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Name" name="name" id="name" required/>
+                        </div>
+
+                        <div class="box-email box-content">
+                            <label for="email">E-mail</label>
+                            <input type="email" placeholder="Email" name="email" id="email" required/>
+                        </div>
+                    </div>
+
+                    <div class="box-subject box-content">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" placeholder="Subject" id="subject" required/>
+                    </div>
+
+                    <div class="box-msg box-content">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">send message</button>
+                </form>
+            </div>
+        </div><!--fim grid-container-->
+    </main>
+
+    <footer class="footer"><!--footer-->
+        <div class="all-contents">
+            <div class="social-media">
+                <a href="#"><img src="/assets/imgs/social-media/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/web_innovate/"><img src="/assets/imgs/social-media/Instagram.png" alt="Instagram icon"></a>
+            </div>
+    
+            <div class="content-copyright">
+                <i class="fa fa-copyright"></i>
+                <span>Copyright 2023. WebInnovate</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/menu.js" defer></script>
+    <script src="/js/formValidator.js" defer></script>
+</body>
+</html>

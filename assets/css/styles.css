@@ -1,0 +1,429 @@
+.btn-center {
+    display: block;
+    max-width: 120px;
+    margin: 50px auto;
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+
+    background-color: black;
+    border-radius: 8px;
+}
+
+/*btn whatsapp*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right: 15px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size: 40px;
+	box-shadow: 0.51px 0.51px 1.5px #d7d4d4;
+    z-index: 999;
+}
+.float:hover {
+    background-color: rgb(52, 190, 110);
+}
+
+.my-float{
+	margin-top: 10px;
+}
+/**/
+span {
+    display: block;
+}
+
+img {/**/
+    max-width: 100%;
+}
+p {
+    max-width: 600px;
+    text-align: justify;
+    margin: 0 auto;
+}
+.title-main {
+    font-size: 40px;
+    text-align: left;
+}
+.titles {
+    text-align: center;
+    font-size: 50px;
+}
+
+.subtitle {
+    font-size: 30px;
+    text-align: center;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    gap: 10px;
+    background-color: #2424da;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+.main-content {/*conteudo principal*/
+    max-width: 600px;
+    flex: 1 1 300px;
+    margin: 0px auto;
+    text-align: left;
+}
+.container-img {
+    margin-top: 10px;
+    max-width: 600px;
+    flex: 1 1 300px;
+    max-height: 400px;
+}
+
+/*how can we help your company*/
+
+.help-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.help-section-flex { /*container dos cards*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
+.cards-flex-item{ /*cada cards dos servicos oferecidos*/
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(8, 8, 8, 0.2);
+    padding: 20px;
+    flex: 1 1 400px;
+    gap: 10px;
+}
+
+/*secao web development*/
+
+.developer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.developer > p {
+    max-width: 400px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.container-img > .img-2{
+    flex: 1 1 400px;
+    max-height: 350px;
+}
+
+
+/*secao extra -> desenvolva sua presença online*/
+
+.section-online-presence{ /**/
+    padding: 10px;
+
+}
+
+/**/
+
+.our-results-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.results-item{
+    flex: 1 1 200px;
+    height: 150px;
+    max-height: 170px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 10px;
+    box-shadow: 0px 5px 9px rgba(4, 4, 4, 0.1);
+    border-radius: 5px;
+    color: #2424da;
+}
+.results-item:hover {
+    background-color: rgba(211, 211, 211, 0.303);
+    transition: 0.5s;
+}
+
+/*portifolio*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.title-project {
+    margin-bottom: 0px;
+}
+.text-port{
+    text-align: center;
+    color: rgba(116, 116, 115, 0.858);
+    font-size: 10pt;
+}
+
+.gallery img {
+    width: 300px;
+    max-height: 300px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery-2 img {
+    min-width: 100px;
+    max-height: 500px;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    overflow: auto;
+    background-position: center;
+    background-size: cover;
+}
+.modal-content {
+    display: block;
+    margin: 70px auto;
+    width: 80%;
+    max-width: 1200px;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*last section before footer -->*/
+
+.last-section {
+    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #2424da;
+}
+.last-section > p {
+    text-align: justify;
+    max-width: 800px;
+    
+}
+
+/*definindo o footer*/
+
+/*footer*/
+/*subtitulo footer*/
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 5px;
+    border: 0.5px solid rgb(15, 15, 15);
+}
+
+.p1 { /*paragrafo footer about us*/
+    margin: 0;
+    max-width: 250px;
+}
+
+.footer-contents {
+    margin-top: 5px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "left center right"
+    ;
+    justify-content: space-around;
+}
+
+.left {
+    grid-area: left;
+}
+.center {
+    grid-area: center;
+}
+.right {
+    grid-area: right;
+}
+
+.box > h4 {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+/*alls box-contact*/
+.place, .phone, .email {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.phone, .email{
+    margin-top: 10px;
+}
+
+/*footer config*/
+.btn-footer {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 10pt;
+    outline: none;
+    border: none;
+}
+.btn-footer:hover{
+    background-color: rgb(174, 171, 171);
+    cursor: pointer;
+    
+}
+
+/*Footer Form*/
+.footer-form input:focus, textarea:focus{
+    outline: none;
+    border: none;
+    border-left: 3px solid #2424da;
+}
+form .email, .msg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+form .msg {
+    margin-top: 8px;
+}
+
+form input, textarea { 
+    width: 200px;
+    padding: 5px;
+    border: none;
+}
+
+/*social medias icons*/
+.all-contents {
+    width: 300px;
+    margin: 30px auto 5px auto;
+    text-align: center;
+}
+.social-media a{
+    padding: 7px;
+}
+.social-media img{
+    width: 25px;
+}
+.content-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+
+/*  ---------------------------------------------------------  */
+
+/*CREAATING A RESPONSIVE PAGES*/
+
+@media (max-width: 690px) and (max-width: 700px){
+    .main-content {
+        width: 100%;
+    }
+
+    .footer-contents{
+        width: 100%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 10px;
+    }
+    p {
+        min-width: 100%;
+    }
+    input, textarea, .btn {
+        width: 100%;
+    }
+    .place, .phone, .email{
+        display: block;
+        width: 100%;
+        border: 0.5px solid rgba(211, 211, 211, 0.285);
+        text-align: center;
+        margin-top: 10px;
+        padding: 5px;
+    }
+    
+    form input {
+        width: 100%;
+        padding: 10px;
+    }
+    .modal {
+        min-height: 100%;
+    }
+    .title-main {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    /*botao whatsapp
+    .float{
+        position:fixed;
+        width:70px;
+        height:70px;
+        bottom: 30px;
+        right: 10px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:40px;
+        box-shadow: 0.51px 0.51px 1.5px #d7d4d4;
+        z-index: 999;
+    }
+    .float:hover {
+        background-color: rgb(52, 190, 110);
+    }  /*
+}

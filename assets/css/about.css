@@ -1,0 +1,50 @@
+@import url(main.css);
+@import url(styles.css);
+
+
+.grid-container {
+    max-width: 1200px;
+    margin: 0px auto;
+
+    display: grid;
+    grid-template-areas:
+        "about about about"
+    ;
+    
+}
+.main-section {
+    height: 200px;
+}
+
+.about-us {
+    grid-area: about;
+    text-align: center;
+    padding: 10px;
+}
+
+.text-about {
+    margin: 30px auto;
+}
+.text-about p {
+    margin-bottom: 15px;
+}
+
+.boxes-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 10px;
+}
+.boxes-about h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.box-mission, .box-vision, .box-values {
+    text-align: justify;
+    max-width: 320px;
+    min-height: 200px;
+    padding: 10px;
+    border: 1px solid;
+}

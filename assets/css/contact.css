@@ -1,0 +1,170 @@
+
+.grid-container{
+    max-width: 800px;
+    margin: 50px auto;
+    grid-area: "contact-us";
+}
+
+/*reset others styles*/
+
+button {
+    border: none;
+    background-color: initial;
+    padding: none;
+    margin: none;
+}
+textarea:focus {
+    border: none;
+}
+
+
+/*all label*/
+label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 3px;
+    font-weight: 100;
+}
+
+/*all input*/
+input, textarea{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+/*all placeholders*/
+input::placeholder {
+    color: rgba(128, 128, 128, 0.699);
+}
+
+.contact-us {/*conatiner do formuario*/
+    grid-area: contact-us;
+    display: flex;
+    border: 0.5px solid;
+    border-radius: 4px;
+}
+
+.box-address {
+    padding: 20px;
+    max-width: 300px;
+    height: inherit;
+    color: white;
+
+    background-color: #1d30d2bb;
+
+}
+.box-address h4 {
+    font-size: 20pt;
+}
+
+.box-address p {
+    font-size: 13pt;
+    text-align: justify;
+}
+
+.place, .phone, .email {
+    margin: 18px auto 22px auto;
+}
+
+.box-address i {
+    border: 0.5px solid;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+
+/*formuario contato*/
+
+
+form {
+    padding: 20px;
+    width: 100%;
+}
+
+.box-content {
+    margin: 10px auto 10px auto;
+}
+
+.box-name-email {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.box-name-email input, .box-subject input, textarea {/*definir borda do input name, email, subject and textarea*/
+    border-bottom: 0.2px solid rgba(211, 211, 211, 0.693);
+}
+
+/*box-subject*/
+.box-subject input{
+    width: 100%;
+
+}
+
+.box-msg {
+    margin-top: 15px;
+    border: auto;
+}
+
+.box-msg textarea {
+    min-width: 200px;
+    width: 100%;
+    max-width: 420px;
+    min-height: 98px;
+    max-height: 100px;
+    max-block-size: 98.4px;
+    
+}
+.box-msg > textarea:focus {
+    border-bottom: 0.2px solid rgba(211, 211, 211, 0.693);
+}
+.box-msg > textarea::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+/*btn submit to sent a form*/
+
+.btn-submit {
+    background-color: rgba(49, 67, 230, 0.733);
+    width: max-content;
+    padding: 10px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 400;
+    border: 1px;
+    border-radius: 4px;  
+}
+.btn-submit:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: rgb(33, 58, 102);
+}
+
+@media (max-width: 800px){
+    .box-address{
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-areas: "contact";
+        padding: 10px;
+    }
+    .contact-us{
+        grid-area: contact;
+        
+    }
+    .box-name-email {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .box-content{
+        width: 100%;
+    }
+    .box-name input, .box-email input{
+        width: 100%;
+    }
+}
