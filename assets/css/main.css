@@ -90,7 +90,7 @@ a.linkAtivo{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #2424da;
+    background: linear-gradient(45deg, #004d99, #0066cc, #0077b3, #0088cc, #0099e6);
     margin-bottom: 5px;
     
 }

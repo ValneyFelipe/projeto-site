@@ -66,7 +66,8 @@ p {
     justify-content: space-between;
     align-items:center;
     gap: 10px;
-    background-color: #2424da;
+    background: linear-gradient(45deg, #004d99, #0066cc, #0077b3, #0088cc, #0099e6);
+
     color: white;
     padding: 10px;
     position: relative;
@@ -248,7 +249,7 @@ p {
     text-align: center;
     padding: 10px;
     color: white;
-    background-color: #2424da;
+    background: linear-gradient(45deg, #004d99, #0066cc, #0077b3, #0088cc, #0099e6);
 }
 .last-section > p {
     text-align: justify;
