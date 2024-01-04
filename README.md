@@ -1,2 +1,10 @@
-# my-first-project
-WebInnovate um site simples para uma agência fictícia de desenvolvimento web que desenvolvi após cerca de dois meses de estudoHTML, CSS, JS. Tendo como objetivo colocar em prática meus estudos sobre HTML5 e CSS3 e JavaScript.
+# My First Website
+This is the repository for my first website, a simple project to apply my studies in HTML5, CSS3, and JavaScript.
+
+# Objective
+To develop a basic website as part of my learning in web development, focusing on practicing essential concepts of these technologies.
+
+# Technologies
+- HTML5
+- CSS3
+- JavaScript
